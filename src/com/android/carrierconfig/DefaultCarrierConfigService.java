@@ -40,7 +40,7 @@ public class DefaultCarrierConfigService extends CarrierService {
     public static final String BOOL_WORLD_PHONE = "bool_world_phone";
     public static final String BOOL_SHOW_CDMA_CHOICES = "show_cdma_choices_bool";
     public static final String BOOL_SHOW_APN_SETTING_CDMA = "bool_show_apn_setting_cdma";
-    private String DEVICE_FAMILY = SystemProperties.get("ro.ril.device_family");
+    private String DEVICE_FAMILY = SystemProperties.get("telephony.radioAccessFamily");
 
     private XmlPullParserFactory mFactory;
 
